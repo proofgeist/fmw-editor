@@ -1,48 +1,41 @@
 {
-  "DisplayLayout": {
+  "SourceField": {
     "category": "Required",
-    "help": "Select the layout you want to use to gather your records",
-    "label": "Display Layout",
+    "help": "Select the field that you want the Editor to connect to. The text field needs to be on the layout, although it can be offscreen.",
+    "label": "Rich Text HTML",
     "type": "select",
     "options": [""],
     "value": "",
     "reScanOnChange": true,
     "required": true,
-    "fmSchema": { "type": "Layout" },
-    "rightLabel": "Layout"
-  },
-  "PrimaryKeyField": {
-    "category": "Required",
-    "help": "The is the unique primary key of the the table you are using",
-    "label": "Primary Key",
-    "type": "select",
-    "options": [""],
-    "value": "",
-    "required": true,
-    "fmSchema": { "type": "Field" },
-    "rightLabel": "Text or Number Field"
-  },
-  "NameField": {
-    "category": "Required",
-    "help": "The name you want to display in the link",
-    "label": "Person Name Field",
-    "type": "select",
-    "options": [""],
-    "value": "",
-
-    "required": true,
     "fmSchema": { "type": "Field" },
     "rightLabel": "Text Field"
   },
-
-  "ListStyle": {
+  "Theme": {
     "category": "Not Required",
-    "help": "The name you want to display in the link",
+    "help": "The theme to use for the Editor. Snow and Bubble are the best options. Core is just for display",
     "label": "Style",
     "type": "select",
-    "options": ["blue", "green", "pink"],
-    "value": "",
+    "options": ["snow", "bubble"],
+    "value": "snow",
     "required": false,
     "rightLabel": ""
+  },
+  "Toolbar": {
+    "category": "Not Required",
+    "help": "Choose either \"basic\" or \"advanced\"",
+    "label": "Toolbar",
+    "type": "select",
+    "options": ["basic", "advanced"],
+    "value": "basic",
+    "required": false
+  },
+  "ReadOnly": {
+    "category": "Not Required",
+    "help": "This is a good option for displaying the rich text without the editing features.",
+    "label": "Read only",
+    "type": "checkbox",
+    "value": false,
+    "required": false
   }
 }

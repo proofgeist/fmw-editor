@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import defaultConfig from "./configuration.json";
-import Addon from "./components/Addon";
-import Configurator from "./components/Configuration";
+import RichTextEditor from "./components/RichTextEditor";
+import Configurator from "./components/Configurator";
 
 function Widget(initialProps) {
   const Config = initialProps.Config;
@@ -11,7 +11,7 @@ function Widget(initialProps) {
   }
 
   if (initialProps.ShowConfig) return <Configurator {...initialProps} />;
-  return <Addon {...initialProps} />;
+  return <RichTextEditor {...initialProps} />;
 }
 
 export default Widget;

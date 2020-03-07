@@ -5,3 +5,24 @@
 2020-03-04 07:28:46.700 -0800	AddonName.fmp12	0	Import of script steps from clipboard started
 2020-03-04 07:28:46.701 -0800	AddonNameFind	0	script steps imported : 1
 2020-03-04 07:28:46.701 -0800	AddonName.fmp12	0	Import completed
+2020-03-05 09:10:38.565 -0800	fmw-rte.fmp12	0	Import of script steps from clipboard started
+2020-03-05 09:10:38.567 -0800	RichTextEditor Save Data	0	script steps imported : 1
+2020-03-05 09:10:38.567 -0800	fmw-rte.fmp12	0	Import completed
+2020-03-05 15:56:03.550 -0800	fmw-rte.fmp12	0	Import of script steps from clipboard started
+2020-03-05 15:56:03.550 -0800	RichTextEditor Insert Image	0	script steps imported : 8
+2020-03-05 15:56:03.551 -0800	fmw-rte.fmp12	0	Import completed
+2020-03-05 16:43:52.536 -0800	fmw-rte.fmp12	0	Import of script steps from clipboard started
+2020-03-05 16:43:52.538 -0800	RichTextEditor Insert Text	0	script steps imported : 2
+2020-03-05 16:43:52.539 -0800	fmw-rte.fmp12	0	Import completed
+2020-03-06 14:03:26.322 -0800	fmw-rte.fmp12	0	Import of script steps from clipboard started
+2020-03-06 14:03:26.328 -0800	Set Read Only	0	script steps imported : 10
+2020-03-06 14:03:26.329 -0800	fmw-rte.fmp12	0	Import completed
+2020-03-06 14:22:59.087 -0800	fmw-rte.fmp12	0	Import of script steps from clipboard started
+2020-03-06 14:22:59.088 -0800	Set Read Only	0	script steps imported : 7
+2020-03-06 14:22:59.088 -0800	fmw-rte.fmp12	0	Import completed
+2020-03-06 14:40:29.867 -0800	fmw-editor.fmp12	0	Import of script steps from clipboard started
+2020-03-06 14:40:29.868 -0800	RichTextEditor Read Data	0	script steps imported : 1
+2020-03-06 14:40:29.868 -0800	fmw-editor.fmp12	0	Import completed
+2020-03-06 14:41:05.787 -0800	fmw-editor.fmp12	0	Import of script steps from clipboard started
+2020-03-06 14:41:05.793 -0800	RichTextEditor Read Data	0	script steps imported : 2
+2020-03-06 14:41:05.793 -0800	fmw-editor.fmp12	0	Import completed
