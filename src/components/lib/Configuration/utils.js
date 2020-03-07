@@ -11,6 +11,8 @@ import {
   Row,
   Button
 } from "reactstrap";
+import { fmCallScript } from "fmw-utils";
+import { SAVE_CONFIG_SCRIPT } from "../../../constants";
 
 export function buildDefaults(Config) {
   const obj = {};
@@ -161,13 +163,19 @@ export function ConfigFormWrapper({
         {/* FOOTER */}
         <Navbar fixed="bottom" color="dark">
           <FooterMessage formState={formState} />
-          <Button
-            disabled={submitDisabled}
-            className="float-right"
-            color="primary"
-          >
-            Save
-          </Button>
+          <div className="float-right">
+            <Button
+              onClick={() =>
+                fmCallScript(SAVE_CONFIG_SCRIPT, null, { eventType: "cancel" })
+              }
+              outline
+            >
+              {submitDisabled ? "Close" : "Cancel"}
+            </Button>{" "}
+            <Button disabled={submitDisabled} color="primary">
+              Save
+            </Button>
+          </div>
         </Navbar>
       </Form>
     </Container>

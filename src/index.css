@@ -15,3 +15,38 @@ code {
 html body {
   overflow: hidden;
 }
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="9px"]::before {
+  content: "Smallest";
+  font-size: 9px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="11px"]::before {
+  content: "Smaller";
+  font-size: 11px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="13px"]::before {
+  content: "Normal";
+  font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="16px"]::before {
+  content: "Large";
+  font-size: 16px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="18px"]::before {
+  content: "Larger";
+  font-size: 18px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="24px"]::before {
+  content: "Huge";
+  font-size: 24px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="36px"]::before {
+  content: "Giant";
+  font-size: 36px !important;
+}

@@ -9,8 +9,10 @@ import { READ_DATA_SCRIPT, SAVE_DATA_SCRIPT } from "../constants";
 Quill.register(Quill.import("attributors/style/direction"), true);
 Quill.register(Quill.import("attributors/style/align"), true);
 Quill.register(Quill.import("attributors/class/background"), true);
-Quill.register(Quill.import("attributors/style/size"), true);
 Quill.register(Quill.import("attributors/style/font"), true);
+var Size = Quill.import("attributors/style/size");
+Size.whitelist = ["9px", "11px", "13px", "16px", "18px", "24px", "36px"];
+Quill.register(Size, true);
 
 function useConfig(name, defaultValue) {
   let initialValue = getConfig(name);
@@ -80,7 +82,6 @@ export default function RichTextEditor() {
   }
 
   let themeValue = readOnly || theme === "core" ? null : theme;
-  console.log(themeValue);
 
   return (
     <ReactQuill
@@ -98,11 +99,12 @@ export default function RichTextEditor() {
 const AdvancedModules = {
   toolbar: [
     [{ header: [1, 2, 3, 4, false] }],
+    [{ size: Size.whitelist }],
     ["bold", "italic", "underline", "strike", "blockquote", "code-block"],
     [{ color: [] }, { background: [] }], // dropdown with defaults from theme
     [{ font: [] }],
     [{ align: [] }],
-    [{ size: ["small", false, "large", "huge"] }],
+
     [
       { list: "ordered" },
       { list: "bullet" },
@@ -111,7 +113,7 @@ const AdvancedModules = {
     ],
 
     ["link", "image", "video"],
-    ["formula"],
+
     ["clean"]
   ]
 };
