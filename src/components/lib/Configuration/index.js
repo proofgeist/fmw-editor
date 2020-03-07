@@ -22,7 +22,11 @@ get schema, and eventually save the Config to the DB.
 */
 export default function Configurator(props) {
   const { AddonUUID, Config, children } = props;
-  const defaultValues = buildDefaults(Config);
+
+  // STATE store the CONFIG
+  const [newConfig, setNewConfig] = useState(Config);
+  const [currentNav, setNav] = useState("required");
+  const defaultValues = buildDefaults(newConfig);
 
   // FORM - useForm hook
   const {
@@ -37,10 +41,6 @@ export default function Configurator(props) {
     defaultValues,
     mode: "onChange"
   });
-
-  // STATE store the CONFIG
-  const [newConfig, setNewConfig] = useState(Config);
-  const [currentNav, setNav] = useState("required");
 
   /**
    * ON CHANGE - we may scan schema again.
@@ -86,13 +86,13 @@ export default function Configurator(props) {
   ///
 
   function proper(name) {
-    return { register, ...Config[name], name, onChange, errors };
+    return { register, ...newConfig[name], name, onChange, errors };
   }
   const menuProps = { errors, onClick: link => setNav(link), currentNav };
   const submitDisabled = !formState.dirty || !formState.isValid;
 
   const onSubmit = handleSubmit(data => {
-    const config = JSON.parse(JSON.stringify(Config));
+    const config = JSON.parse(JSON.stringify(newConfig));
     Object.keys(config).forEach(key => {
       config[key].value = data[key];
     });
