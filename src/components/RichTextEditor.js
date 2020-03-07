@@ -50,19 +50,19 @@ export default function RichTextEditor() {
     setHtml(result.html);
   };
 
-  window.Editor_InsertText = function(t) {
+  window.Editor_InsertText = function(text) {
     const editor = Q.current.getEditor();
     const selection = editor.getSelection();
     if (!selection) return;
     const { index, length } = selection;
     editor.deleteText(index, length);
-    editor.insertText(index, t);
+    editor.insertText(index, text);
   };
 
-  window.Editor_ReadOnlyOn = function(value) {
+  window.Editor_ReadOnlyOn = function() {
     setReadOnly(true);
   };
-  window.Editor_ReadOnlyOff = function(value) {
+  window.Editor_ReadOnlyOff = function() {
     setReadOnly(false);
   };
 
