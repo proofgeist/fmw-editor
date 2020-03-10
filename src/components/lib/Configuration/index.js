@@ -11,7 +11,7 @@ import {
 import Control from "./Control";
 
 import { buildDefaults } from "./utils";
-import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form/dist/react-hook-form.ie11";
 import "./index.css";
 
 export { MiniPage, ConfigMenu, ConfigContent, ConfigMenuItem, Control };
