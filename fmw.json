@@ -1,7 +1,7 @@
 {
-  "file": "fmw-editor.fmp12",
-  "server": "$",
+  "file": "fmw_editor.fmp12",
+  "server": "claris.gicloud.net",
   "uploadScript": "RichTextEditorUpdateHTML",
-  "user": "<user>",
-  "pass": "<password>"
+  "user": "admin",
+  "pass": "Crown-Sun-Person-5"
 }
