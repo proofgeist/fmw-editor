@@ -25,10 +25,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:inline": "yarn build && gulp",
+    "build:inline": "npm run build && gulp",
     "start:https": "cross-env HTTPS=true react-scripts start",
     "upload": "node ./scripts/loadFinal",
-    "build:upload": "yarn build:inline && npm run upload",
+    "build:upload": "npm run build:inline && npm run upload",
     "openfile": "node ./scripts/openFileOnServer"
   },
   "eslintConfig": {
