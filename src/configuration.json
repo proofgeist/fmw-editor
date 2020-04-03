@@ -1,39 +1,22 @@
 {
   "SourceField": {
-    "category": "Required",
-    "help": "Select the field that you want the Editor to connect to. The text field needs to be on the layout, although it can be offscreen.",
-    "label": "Rich Text HTML",
     "type": "select",
     "options": [""],
     "value": "",
-    "reScanOnChange": true,
-    "required": true,
-    "fmSchema": { "type": "Field" },
-    "rightLabel": "Text Field"
+    "required": true
   },
   "Theme": {
-    "category": "Not Required",
-    "help": "The theme to use for the Editor. Snow and Bubble are the best options. Core is just for display",
-    "label": "Style",
     "type": "select",
     "options": ["snow", "bubble"],
     "value": "snow",
-    "required": false,
-    "rightLabel": ""
+    "required": false
   },
   "Toolbar": {
-    "category": "Not Required",
-    "help": "Choose either \"basic\" or \"advanced\"",
-    "label": "Toolbar",
     "type": "select",
-    "options": ["basic", "advanced"],
     "value": "basic",
     "required": false
   },
   "ReadOnly": {
-    "category": "Not Required",
-    "help": "This is a good option for displaying the rich text without the editing features.",
-    "label": "Read only",
     "type": "checkbox",
     "value": false,
     "required": false

@@ -1,0 +1,32 @@
+{
+  "RequiredMenu": {
+    "MenuLabel": "Required",
+    "PageTitle": "Required Items",
+    "Fields": {
+      "SourceField": {
+        "help": "Select the field that you want the Editor to connect to. The text field needs to be on the layout, although it can be offscreen.",
+        "label": "Rich Text HTML",
+        "rightLabel": "Text Field"
+      }
+    }
+  },
+  "StyleMenu": {
+    "MenuLabel": "Optional",
+    "PageTitle": "Optional",
+    "Fields": {
+      "Theme": {
+        "help": "The theme to use for the Editor. Snow and Bubble are the best options. Core is just for display",
+        "label": "Style"
+      },
+      "Toolbar": {
+        "help": "Choose either \"basic\" or \"advanced\"",
+        "label": "Toolbar",
+        "options": ["basic", "advanced"]
+      },
+      "ReadOnly": {
+        "help": "This is a good option for displaying the rich text without the editing features.",
+        "label": "Read only"
+      }
+    }
+  }
+}

@@ -25,8 +25,8 @@ export default function RichTextEditor() {
   const [html, setHtml] = useState("");
 
   //pulling initalValues from Config
-  const [theme, setTheme] = useConfig("Theme", "snow");
-  const [toolbar, setToolbar] = useConfig("Toolbar", "basic");
+  const [theme] = useConfig("Theme", "snow");
+  const [toolbar] = useConfig("Toolbar", "basic");
   const [readOnly, setReadOnly] = useConfig("ReadOnly", false);
   const Q = useRef();
 
